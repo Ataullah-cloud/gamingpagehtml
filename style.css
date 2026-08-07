@@ -1,0 +1,577 @@
+/* =================================
+   RESET
+================================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* =================================
+   BODY
+================================= */
+
+body{
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    font-family: 'Poppins', sans-serif;
+
+    color: white;
+
+}
+
+
+
+/* imgs sliding */
+
+.background-slider{
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 100vh;
+
+    z-index: -1;
+
+}
+
+
+
+/* EACH BACKGROUND */
+
+.bg{
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    opacity: 0;
+
+    animation: fadeBackground 12s infinite;
+
+}
+
+
+
+
+   /* BACKGROUND IMAGE 1 */
+
+
+.bg1{
+
+    
+
+    background-image: url("https://wallpaperaccess.com/full/955484.jpg");
+
+}
+
+
+
+
+.bg2{
+
+    
+    background-image: url("https://images.wallpapersden.com/image/download/cool-marvel-s-spider-man-2-4k-gaming_bmZraGiUmZqaraWkpJRobWllrWdma2U.jpg");
+
+    animation-delay: 4s;
+
+}
+
+
+
+
+
+.bg3{
+
+    
+
+    background-image: url("https://assets-prd.ignimgs.com/2023/05/24/sm2thumb-1684963649503.jpg?width=1280");
+
+    animation-delay: 8s;
+
+}
+
+
+
+
+
+@keyframes fadeBackground{
+
+    0%{
+        opacity: 0;
+    }
+
+    10%{
+        opacity: 1;
+    }
+
+    30%{
+        opacity: 1;
+    }
+
+    40%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+
+}
+
+
+
+
+nav{
+
+    width: 100%;
+
+    padding: 20px 50px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-color: rgba(0,0,0,0.45);
+
+}
+
+
+
+/* GAMERX */
+
+nav h2{
+
+    font-size: 28px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+
+/* NAV LINKS */
+
+.nav-links{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+
+
+/* NAV LINK */
+
+.nav-links a{
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+}
+
+
+
+/* pagw 1 */
+
+.hero{
+
+    min-height: calc(100vh - 80px);
+
+    padding: 60px 80px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+
+}
+
+
+
+/* HERO CONTENT */
+
+.hero-content{
+
+    width: 55%;
+
+    max-width: 700px;
+
+}
+
+
+
+/* line second  */
+
+.small-text{
+
+    color: #bed7da;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+/* text lime 3 MAIN HEADING */
+
+.hero-content h1{
+
+    font-size: 65px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/*  semtence colour BLUE TEXT */
+
+.hero-content h1 span{
+
+    color: #00e5ff;
+
+}
+
+
+
+/* DESCRIPTION */
+
+.description{
+
+    max-width: 600px;
+
+    color: #eae0e0;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+/* EXPLORE ND VEIW BUTON */
+.buttons{
+
+    display: flex;
+
+    gap: 15px;
+
+}
+
+
+
+/* EXPLORE BUTTON */
+
+.btn{
+
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: #00e5ff;
+
+    color: #050505;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    border-radius: 30px;
+
+}
+
+
+
+/*  view gear button  BUTTON */
+
+.second-btn{
+
+    background-color:transparent;
+
+    color: rgb(203, 185, 185);
+
+    border: 1px solid rgb(196, 180, 180);
+
+}
+
+
+
+
+
+.second-page{
+
+    min-height: 100vh;
+
+    padding: 100px 80px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: rgba(0,0,0,0.25);
+
+}
+
+
+
+/* PAGE 2 HEADING */
+
+.second-page h2{
+
+    font-size: 55px;
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+/* PAGE 2 BLUE TEXT */
+
+.second-page h2 span{
+
+    color: #00e5ff;
+
+}
+
+
+
+/* PAGE 2 DESCRIPTION */
+
+.second-description{
+
+    max-width: 650px;
+
+    color: #dddddd;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 50px;
+
+}
+
+
+
+/* =================================
+   CARDS
+================================= */
+
+.cards{
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+}
+
+
+
+/* CARD */
+
+.card{
+
+    width: 30%;
+
+    padding: 30px;
+
+    background-color: rgba(0,0,0,0.55);
+
+    border: 1px solid rgba(255,255,255,0.2);
+
+    border-radius: 20px;
+
+}
+
+
+
+/* CARD ICON */
+
+.card-icon{
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+/* CARD HEADING */
+
+.card h3{
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+/* CARD DESCRIPTION */
+
+.card p{
+
+    color: #cccccc;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 900px){
+
+    nav{
+
+        padding: 20px 25px;
+
+    }
+
+
+    .nav-links{
+
+        gap: 15px;
+
+    }
+
+
+    .nav-links a{
+
+        font-size: 13px;
+
+    }
+
+
+    .hero{
+
+        padding: 50px 30px;
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+
+    .hero-content{
+
+        width: 100%;
+
+    }
+
+
+    .hero-content h1{
+
+        font-size: 45px;
+
+    }
+
+
+    .hero-image{
+
+        width: 100%;
+
+    }
+
+
+    .hero-image img{
+
+        height: 300px;
+
+    }
+
+
+    .cards{
+
+        flex-direction: column;
+
+    }
+
+
+    .card{
+
+        width: 100%;
+
+    }
+
+
+    .second-page h2{
+
+        font-size: 40px;
+
+    }
+
+}
